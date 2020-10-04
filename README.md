@@ -6,7 +6,7 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -30,6 +30,12 @@
 
 ## Installation
 
+> You need serverless installed globally
+
+```bash
+$ sudo npm i -g serverless
+```
+
 ```bash
 $ npm install
 ```
@@ -38,13 +44,15 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm run start:sls
+```
 
-# watch mode
-$ npm run start:dev
+## Deploying to AWS Lambda
 
-# production mode
-$ npm run start:prod
+[Get AWS Credentials](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-your-credentials.html)
+
+```bash
+$ sls deploy --file serverless.yml --aws-profile <serverless-profile>
 ```
 
 ## Test
