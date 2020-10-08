@@ -52,7 +52,7 @@ $ npm run start:sls
 [Get AWS Credentials](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-your-credentials.html)
 
 ```bash
-$ sls deploy --file serverless.yml --aws-profile <serverless-profile>
+$ npm run sls:deploy -- --aws-profile <serverless-profile>
 ```
 
 ## Test
