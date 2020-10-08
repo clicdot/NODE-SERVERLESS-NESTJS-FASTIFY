@@ -16,7 +16,7 @@ Object.keys(slsw.lib.entries).forEach(
 );
 
 module.exports = {
-  entry: entries || slsw.lib.entries,
+  // entry: entries,
   target: 'node',
   mode: slsw.lib.webpack.isLocal ? 'development' : 'production',
   optimization: {

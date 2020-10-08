@@ -13,7 +13,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "start:sls": "sls offline start --httpPort 5021 --lambdaPort 5022",
+    "start:sls": "sls offline start --httpPort 3021 --lambdaPort 3022",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
